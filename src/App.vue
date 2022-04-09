@@ -1,120 +1,56 @@
-<script setup lang="ts">
-import HelloWorld from '@/components/HelloWorld.vue'
-</script>
-
 <template>
   <div id="app">
     <header>
-      <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    </header>  
+    <b-container class="background m-0 p-0">
+      <b-row class="background-row">
+        <b-col class="col1">
+            <img src="./assets/images/imagem-RT-site.svg">
+        </b-col>
+        <b-col class="col2" cols="3">
+          <div class="utility"> 
+            <h2>Utility is the true criterion of beauty</h2>
+            <span>Portfolio Raul Testa</span>
+          </div>
+        </b-col>
+        <b-col class="col3" cols="2"></b-col>
 
-      <div class="wrapper">
-        <HelloWorld msg="You did it!" />
-
-        <nav>
-          <router-link to="/">Home</router-link>
-          <router-link to="/about">About</router-link>
-        </nav>
-      </div>
-    </header>
-
-    <router-view />
+      </b-row>
+    </b-container>
   </div>
 </template>
 
-<style>
-@import '@/assets/base.css';
+<style lang="scss">
+.background {
+  max-width: 100% !important;
+  .background-row {
+    
+    .col3,
+    .col1{
+      height: 100vh;
+      background-color: #F1F1F1
+    }
+    .col1{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+    .col2{
+      background-color: rgb(255, 255, 255);
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
-}
-
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+      .utility {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+      }
+    }
+    
   }
 }
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
 </style>
