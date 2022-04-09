@@ -1,56 +1,88 @@
 <template>
   <div id="app">
     <header>
+      <main-nav/>
     </header>  
-    <b-container class="background m-0 p-0">
+    <b-container class="background">
       <b-row class="background-row">
-        <b-col class="col1">
-            <img src="./assets/images/imagem-RT-site.svg">
+        <b-col class="col1 px-0">
+            <img class="raul-main" src="./assets/images/imagem-RT-site.svg">
         </b-col>
-        <b-col class="col2" cols="3">
-          <div class="utility"> 
+        <b-col class="col2">
+          <div class="utility-text"> 
             <h2>Utility is the true criterion of beauty</h2>
             <span>Portfolio Raul Testa</span>
           </div>
         </b-col>
-        <b-col class="col3" cols="2"></b-col>
-
+        <b-col class="col3"></b-col>
       </b-row>
     </b-container>
   </div>
 </template>
 
-<style lang="scss">
-.background {
-  max-width: 100% !important;
-  .background-row {
-    
-    .col3,
-    .col1{
-      height: 100vh;
-      background-color: #F1F1F1
-    }
-    .col1{
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: flex-start;
-    }
-    .col2{
-      background-color: rgb(255, 255, 255);
+<script>
+import MainNav from '@/components/nav/MainNav.vue'
 
-      .utility {
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: nowrap;
-        align-items: flex-start;
-      }
-    }
-    
+export default {
+  name: 'app',
+  components: {
+    MainNav,
   }
 }
+</script>
 
+
+<style lang="scss">
+#app {
+  header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+  .background {
+    max-width: 100% !important;
+
+    .background-row {
+      .col3,
+      .col1 {
+        height: 100vh;
+        background-color: #F1F1F1
+      }
+
+      .col1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        img.raul-main {
+          max-width: 65%;
+        }
+      }
+
+      .col2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #fff;
+        max-width: 200px;
+
+        .nav-buttons {
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding-top: 1rem;
+          display: flex;
+          justify-content: space-around;
+        }
+      }
+
+      .col3 {
+        max-width: 150px;
+      }
+    }
+  }
+}
 </style>
