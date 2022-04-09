@@ -56,7 +56,8 @@ export default {
         align-items: flex-start;
 
         img.raul-main {
-          max-width: 65%;
+          max-width: 1000px;
+          min-width: 400px;
         }
       }
 
@@ -66,7 +67,7 @@ export default {
         flex-direction: column;
         justify-content: center;
         background-color: #fff;
-        max-width: 200px;
+        max-width: 250px;
 
         .nav-buttons {
           width: 100%;
