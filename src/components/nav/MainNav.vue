@@ -1,5 +1,5 @@
 <template>
-    <b-navbar class="main-nav" type="light" variant="transparent">
+    <b-navbar class="main-nav" :class="currentPage" type="light">
         <b-navbar-brand href="#">
             <div class="branding">
                 <h1>
@@ -33,42 +33,57 @@ export default {
             'Master of Laws',
             'Communication Sciences PhD',            
         ],
+        currentPage: null,
     }),
+
+    watch: {
+        '$route.name' (name) {
+            this.currentPage = name;
+        },
+    },
 }
 </script>
 
 <style lang="scss">
-    .branding {
-        width: 700px;
-        
-        .cargos {
+    .main-nav {
+        background-color: #F1F1F1;
+
+        &.home {
+            background-color: transparent;
+        }
+
+        .branding {
+            width: 700px;
+            
+            .cargos {
+                span {
+                    margin-right: 15px;
+                }
+            }
+            
+            h1 {
+                font-size: 80px;
+            }
             span {
-                margin-right: 15px;
+                font-size: 11px;
+                margin-right: 6px;
+            }
+
+            h1 {
+                font-size: 80px;
+            }
+
+            span {
+                font-size: 11px;
+                margin-right: 6px;
             }
         }
-        
-        h1 {
-            font-size: 80px;
-        }
-        span {
-            font-size: 11px;
-            margin-right: 6px;
-        }
 
-        h1 {
-            font-size: 80px;
+        .navbar-nav {
+            width: 250px;
+            margin-right: 135px;
+            display: flex;
+            justify-content: space-around;
         }
-
-        span {
-            font-size: 11px;
-            margin-right: 6px;
-        }
-    }
-
-    .navbar-nav {
-        width: 250px;
-        margin-right: 135px;
-        display: flex;
-        justify-content: space-around;
     }
 </style>

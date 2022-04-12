@@ -17,3 +17,18 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+#app {
+  position: relative;
+
+  header {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    right: 0;
+  }
+
+}
+</style>

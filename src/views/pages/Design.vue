@@ -1,39 +1,58 @@
 <template>
-    <b-container class="background design">
-        <b-row class="background-row">
-            <b-col class="col1 px-0">
-            </b-col>
-        </b-row>
-    </b-container>
+    <div class="page-design">
+      test 123
+      
+      <b-row class="mt-4 mx-4">
+        <b-col v-for="(hexagon, index) in hexagons" :key="index" class="mb-4 d-flex justify-content-center">
+          <hexagon/>
+        </b-col>
+      </b-row>
+    </div>
 </template>
 
+<script>
+import Hexagon from '@/components/hexagon-grid/Hexagon.vue';
+
+export default {
+  name: 'design',
+
+  data: () => ({
+    hexagons: [
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+      'hexagon',
+    ],
+  }),
+
+  components: {
+    Hexagon
+  },
+}
+</script>
+
 <style lang="scss">
-#app {
-  .background.design {
-    max-width: 100% !important;
-
-    .background-row {
-      .col1 {
-        height: 15vh;
-        background-color: #F1F1F1;
-        position: fixed;
-      }}
-
-    .background-row-2 {
-      .col1 {
-        height: 100vh;
-        background-color: #9c0404
-      }
-        .nav-buttons {
-          width: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          padding-top: 1rem;
-          display: flex;
-          justify-content: space-around;
-        }
-      }
-    }
-  }
+.page-design {
+  padding-top: 161px;
+}
 </style>
