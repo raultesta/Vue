@@ -48,11 +48,9 @@ export default {
         }
         
         h1 {
-            font-family: "Gotham", Helvetica, Arial;
             font-size: 80px;
         }
         span {
-            font-family: "Gotham-Black", Helvetica, Arial;
             font-size: 11px;
             margin-right: 6px;
         }
