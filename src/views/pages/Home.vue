@@ -2,7 +2,7 @@
     <b-container class="background">
       <b-row class="background-row">
         <b-col class="col1 px-0">
-            <img class="raul-main" src="../assets/images/imagem-RT-site.svg">
+            <img class="raul-main" src="../../assets/images/imagem-RT-site.svg">
         </b-col>
         <b-col class="col2">
           <div class="utility-text"> 

@@ -1,19 +1,8 @@
 // Override from: "node_modules/bootstrap/scss/_variables.scss"
-@font-face {
-    font-family: "gotham";
-    src: local("gotham"),
-      url(../../fonts/Gotham-Medium.ttf) format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
 
 // Typography
 //
 
 // Fonts
-$font-family-inter: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$font-family-inter: Gotham, Arial, 'Arial Narrow', sans-serif;
 $font-family-base: $font-family-inter;
-
-.btn:focus{
-    box-shadow: none !important;
-}

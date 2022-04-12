@@ -1,0 +1,12 @@
+a {
+  color: initial;
+
+  &:hover {
+    color: initial;
+    text-decoration: none;
+  }
+}
+
+.btn:focus{
+  box-shadow: none !important;
+}

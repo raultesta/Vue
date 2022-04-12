@@ -4,10 +4,7 @@
             <b-col class="col1 px-0">
             </b-col>
         </b-row>
-      
     </b-container>
-
-
 </template>
 
 <style lang="scss">

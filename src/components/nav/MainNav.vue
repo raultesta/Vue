@@ -2,7 +2,9 @@
     <b-navbar class="main-nav" type="light" variant="transparent">
         <b-navbar-brand href="#">
             <div class="branding">
-                <h1><a @click="$router.push('/')">PORTFOLIO</a></h1>
+                <h1>
+                    <router-link :to="{ name:'home' }">PORTFOLIO</router-link>
+                </h1>
                 <span v-for="(cargo, index) in cargos" v-bind:key="index">
                     {{ cargo }}
                 </span>
@@ -10,7 +12,7 @@
         </b-navbar-brand>
         <b-navbar-nav class="ml-auto">
             <b-nav-item href="#">
-                <b-button to="/design" pill variant="primary">Design</b-button>
+                <b-button :to="{ name:'design' }" pill variant="primary">Design</b-button>
             </b-nav-item>
             <b-nav-item href="#">
                 <b-button pill variant="primary">Web & UX/UI Design</b-button>
@@ -20,9 +22,8 @@
 </template>
 
 <script>
-
 export default {
-    name: 'Main Nav',
+    name: 'MainNav',
 
     data: () => ({
         cargos: [
@@ -36,44 +37,40 @@ export default {
 }
 </script>
 
-
-
-<style lang="scss" scoped>
-.main-nav {
-    .branding{
-        h1{
+<style lang="scss">
+    .branding {
+        width: 700px;
+        
+        .cargos {
+            span {
+                margin-right: 15px;
+            }
+        }
+        
+        h1 {
             font-family: "Gotham", Helvetica, Arial;
             font-size: 80px;
         }
-        span{
+        span {
             font-family: "Gotham-Black", Helvetica, Arial;
             font-size: 11px;
             margin-right: 6px;
         }
-  }
 
-}
+        h1 {
+            font-size: 80px;
+        }
 
-
-/*
-WORK DOMINGO: 
-- cargos em loop e mudar a font-size
-*/ 
-
-.branding {
-    width: 700px;
-
-    .cargos {
         span {
-            margin-right: 15px;
+            font-size: 11px;
+            margin-right: 6px;
         }
     }
-}
 
-.navbar-nav {
-    width: 250px;
-    margin-right: 135px;
-    display: flex;
-    justify-content: space-around;
-}
+    .navbar-nav {
+        width: 250px;
+        margin-right: 135px;
+        display: flex;
+        justify-content: space-around;
+    }
 </style>
