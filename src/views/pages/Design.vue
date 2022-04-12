@@ -1,5 +1,5 @@
 <template>
-    <b-container class="background">
+    <b-container class="background design">
         <b-row class="background-row">
             <b-col class="col1 px-0">
             </b-col>
@@ -9,12 +9,7 @@
 
 <style lang="scss">
 #app {
-  header {
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-  }
-  .background {
+  .background.design {
     max-width: 100% !important;
 
     .background-row {

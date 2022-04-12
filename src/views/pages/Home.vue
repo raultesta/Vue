@@ -1,5 +1,5 @@
 <template>
-    <b-container class="background">
+    <b-container class="background home">
       <b-row class="background-row">
         <b-col class="col1 px-0">
             <img class="raul-main" src="../../assets/images/imagem-RT-site.svg">
@@ -29,12 +29,7 @@ export default {
 
 <style lang="scss">
 #app {
-  header {
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-  }
-  .background {
+  .background.home {
     max-width: 100% !important;
 
     .background-row {
