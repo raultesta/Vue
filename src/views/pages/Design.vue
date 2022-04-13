@@ -1,6 +1,6 @@
 <template>
     <div class="page-design">
-      test 123
+      Design
       
       <b-row class="mt-4 mx-4">
         <b-col v-for="(hexagon, index) in hexagons" :key="index" class="mb-4 d-flex justify-content-center">
@@ -56,3 +56,4 @@ export default {
   padding-top: 161px;
 }
 </style>
+
