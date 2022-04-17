@@ -18,7 +18,7 @@ export default {
 
   data: () => ({
     hexagons: [
-      'src="../../assets/images/Hexagons_RT-01.svg',
+      'hexagon',
       'hexagon',
       'hexagon',
       'hexagon',

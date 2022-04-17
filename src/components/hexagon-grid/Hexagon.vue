@@ -13,7 +13,7 @@ export default {
 <style lang="scss">
 .hexagon {
   background-color: green;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(8% 29%, 50% 0, 92% 29%, 92% 75%, 50% 100%, 8% 75%);
   width: 215px;
   height: 215px;
   display: flex;
@@ -27,7 +27,7 @@ export default {
 
   &:hover {
     background-color: red;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    clip-path: polygon(8% 29%, 50% 0, 92% 29%, 92% 75%, 50% 100%, 8% 75%);
     
     &:after {
       content: 'An Hexagon';
