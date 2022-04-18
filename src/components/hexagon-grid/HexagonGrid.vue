@@ -28,6 +28,7 @@ export default {
 </script>
 
 <style lang="scss">
+  // Grid tutotial: https://css-tricks.com/hexagons-and-beyond-flexible-responsive-grid-patterns-sans-media-queries/
   $size: 215px; 
   $margin: 15px;
   $float: calc(1.732 * $size + 4 * $margin  - 1px);
