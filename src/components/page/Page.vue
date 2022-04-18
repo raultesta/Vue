@@ -1,6 +1,6 @@
 <template>
-    <div class="hexagon">
-       <img class="hex-img" :src= "imgSrc">
+    <div class="page-main" :class="wrapperClass">
+       <slot></slot>
     </div>
 </template>
 
@@ -8,13 +8,15 @@
 export default {
   name: 'hexagon',
   props: {
-    imgSrc: String,
+    wrapperClass: String,
   },
 }
 </script>
 
 <style lang="scss">
-
+.page-main {
+  padding-top: 161px;
+}
 </style>
 
 

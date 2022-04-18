@@ -1,22 +1,26 @@
 <template>
-    <div class="page-design">
-      <h1>Design</h1>
-      <b-row class="mt-4 mx-4">
-        <b-col v-for="(hexagonSrc, index) in hexagons" :key="index" class="mb-4 d-flex justify-content-center">
-          <hexagon :imgSrc="hexagonSrc"/>
+    <page wrapperClass="page-design">
+      <b-row>
+        <b-col class="d-flex flex-column align-items-center">
+          <h1>Design</h1>
+          <p>NGO’s, businesses, local governments and politics</p>
         </b-col>
       </b-row>
-    </div>
+      <hexagon-grid :hexagons="hexagons"/>
+    </page>
 </template>
 
 <script>
-import Hexagon from '@/components/hexagon-grid/Hexagon.vue';
+import HexagonGrid from '@/components/hexagon-grid/HexagonGrid.vue';
+import Page from '@/components/page/Page.vue';
 
 export default {
   name: 'design',
-
+  components: {
+    Page,
+    HexagonGrid,
+  },
   data: () => ({
-    
     hexagons: [
       '/src/assets/images/Hexagons_RT-01.svg',
       '/src/assets/images/Hexagons_RT-02.svg',
@@ -52,16 +56,15 @@ export default {
       '/src/assets/images/Hexagons_RT-32.svg',
     ],
   }),
-
-  components: {
-    Hexagon
-  },
 }
 </script>
 
 <style lang="scss">
 .page-design {
-  padding-top: 161px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 </style>
 
