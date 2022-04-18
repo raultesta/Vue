@@ -1,37 +1,39 @@
 <template>
     <div class="hexagon">
-      <span></span>
+       <img class="hex-img" :src= "imgSrc">
     </div>
 </template>
 
 <script>
 export default {
-  name: 'hexagon'
+  name: 'hexagon',
+  props: {
+    imgSrc: String,
+  },
 }
 </script>
 
 <style lang="scss">
+$size: 215px; 
+
 .hexagon {
   background-color: green;
-  clip-path: polygon(8% 29%, 50% 0, 92% 29%, 92% 75%, 50% 100%, 8% 75%);
-  width: 215px;
-  height: 215px;
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  width: $size;
+  height: calc($size * 1.1547);
+  // width: 215px;
+  // height: 215px;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
   justify-content: center;
   align-items: center;
-    
-    &:after {
-      content: 'What am I?';
-    }
+  
 
-  &:hover {
-    background-color: red;
-    clip-path: polygon(8% 29%, 50% 0, 92% 29%, 92% 75%, 50% 100%, 8% 75%);
-    
-    &:after {
-      content: 'An Hexagon';
-    }
+  .hex-img {
+   object-fit: cover;
+   width: 100%
   }
 }
 </style>
