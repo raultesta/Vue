@@ -58,7 +58,7 @@ export default {
 
         .hex-img {
           object-fit: cover;
-          width: 100%
+          width: 102%
         }
       }
     }

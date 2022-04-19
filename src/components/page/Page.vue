@@ -15,7 +15,7 @@ export default {
 
 <style lang="scss">
 .page-main {
-  padding-top: 161px;
+  padding-top: 190px;
 }
 </style>
 
