@@ -1,6 +1,13 @@
 @font-face {
   font-family: "Gotham";
   src: local("Gotham"), url("/src/assets/fonts/Gotham-Black/Gotham-Black.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: local("Gotham"), url("/src/assets/fonts/Gotham-Medium/Gotham-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

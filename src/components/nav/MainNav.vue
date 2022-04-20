@@ -15,7 +15,7 @@
                 <b-button :to="{ name:'design' }" pill variant="primary">Design</b-button>
             </b-nav-item>
             <b-nav-item href="#">
-                <b-button pill variant="primary">Web & UX/UI Design</b-button>
+                <b-button :to="{ name:'web-ux' }" pill variant="primary">Web & UX/UI Design</b-button>
             </b-nav-item>
         </b-navbar-nav>
     </b-navbar>
@@ -61,18 +61,6 @@ export default {
                 }
             }
             
-            h1 {
-                font-size: 80px;
-            }
-            span {
-                font-size: 11px;
-                margin-right: 6px;
-            }
-
-            h1 {
-                font-size: 80px;
-            }
-
             span {
                 font-size: 11px;
                 margin-right: 6px;

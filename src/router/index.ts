@@ -17,6 +17,11 @@ const router = new VueRouter({
       name: 'design',
       component: () => import('../views/pages/Design.vue')
     },
+    {
+      path: '/web-ux',
+      name: 'web-ux',
+      component: () => import('../views/pages/WebUx.vue')
+    },
   ]
 })
 

@@ -2,7 +2,7 @@
     <page wrapperClass="page-design">
       <b-row>
         <b-col class="d-flex flex-column align-items-center">
-          <h1>Designing Logos & Brands</h1>
+          <h2>Designing Logos & Brands</h2>
           <p>NGO’s, businesses, local governments and politics</p>
         </b-col>
       </b-row>
