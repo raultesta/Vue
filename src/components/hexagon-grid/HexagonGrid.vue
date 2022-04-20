@@ -61,7 +61,6 @@ export default {
       }
 
       .hexagon {
-        background-color: #000;
         clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
         width: $regularSize;
         margin: $regularMargin;
