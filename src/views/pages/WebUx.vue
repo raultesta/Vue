@@ -6,7 +6,7 @@
           <p>Nowadays my work has its focus on web and UX/UI design and also on web development </p>
         </b-col>
       </b-row>
-      <hexagon-grid :hexagons="hexagons"/>
+      <hexagon-grid :hexagons="hexagons" size="large"/>
     </page>
 </template>
 

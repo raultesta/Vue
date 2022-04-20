@@ -1,5 +1,5 @@
 <template>
-  <b-row class="hexagon-grid">
+  <b-row class="hexagon-grid" :class="size">
     <b-col>
       <div class="d-flex">
         <div class="hexagon-grid-wrapper">
@@ -23,43 +23,76 @@ export default {
   },
   props: {
     hexagons: Array,
+    size: {
+      type: String,
+      default: 'regular',
+    },
   },
 }
 </script>
 
 <style lang="scss">
   // Grid tutotial: https://css-tricks.com/hexagons-and-beyond-flexible-responsive-grid-patterns-sans-media-queries/
-  $size: 215px; 
-  $margin: 15px;
-  $float: calc(1.732 * $size + 4 * $margin  - 1px);
+  $regularSize: 215px; 
+  $regularNumberOfHexagonsPerRow: 5;
+  $regularMargin: 15px;
+  /* DO NOT CHANGE - DARK MAGIC AHEAD */
+  $regularFloat: calc(1.732 * $regularSize + 4 * $regularMargin  - 1px);
+  $regularWrapperWidth: (($regularSize + ($regularMargin * 2)) * $regularNumberOfHexagonsPerRow) + 30;
+
+  $largeSize: 430px; 
+  $largeNumberOfHexagonsPerRow: 3;
+  $largeMargin: 30px;
+  /* DO NOT CHANGE - DARK MAGIC AHEAD */
+  $largeFloat: calc(1.732 * $largeSize + 4 * $largeMargin  - 1px);
+  $largeWrapperWidth: (($largeSize + ($largeMargin * 2)) * $largeNumberOfHexagonsPerRow) + 30;
 
   .hexagon-grid {
-    max-width: 1623px;
+    max-width: $regularWrapperWidth;
     margin: auto;
 
     .hexagon-grid-wrapper {
       &::before {
         content: "";
-        width: calc($size/2 + $margin);
+        width: calc($regularSize/2 + $regularMargin);
+        shape-outside: repeating-linear-gradient(#0000 0 calc($regularFloat - 3px), #000  0 $regularFloat);
         float: left;
         height: 120%;
-        shape-outside: repeating-linear-gradient(#0000 0 calc($float - 3px), #000  0 $float);
       }
 
       .hexagon {
         background-color: #000;
         clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-        width: $size;
-        margin: $margin;
-        height: calc($size*1.1547); 
+        width: $regularSize;
+        margin: $regularMargin;
+        height: calc($regularSize * 1.1547); 
+        margin-bottom: calc($regularMargin - $regularSize * 0.2885); 
         display: inline-block;
         font-size:initial;
-        margin-bottom: calc($margin - $size*0.2885); 
 
         .hex-img {
           object-fit: cover;
           width: 100%;
           height: 100%;
+        }
+      }
+    }
+
+    // Large sizes
+    &.large {
+      max-width: $largeWrapperWidth;
+
+      .hexagon-grid-wrapper {
+        &::before {
+          width: calc($largeSize/2 + $largeMargin);
+          shape-outside: repeating-linear-gradient(#0000 0 calc($largeFloat - 3px), #000  0 $largeFloat);
+        }
+        
+        .hexagon {
+          width: $largeSize;
+          margin: $largeMargin;
+          height: calc($largeSize * 1.1547); 
+          margin-bottom: calc($largeMargin - $largeSize * 0.2885); 
         }
       }
     }
