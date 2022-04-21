@@ -22,9 +22,33 @@ export default {
   },
   data: () => ({
     hexagons: [
-      '/src/assets/images/Hex/png/Hexagons_RT_bighex-66.png',
-      '/src/assets/images/Hex/png/Hexagons_RT_bighex-67.png',
-      '/src/assets/images/Hex/png/Hexagons_RT_bighex-68.png',
+      {
+        imageSrc: '/src/assets/images/Hex/png/Hexagons_RT_bighex-66.png',
+        topText: 'designed factoring in the need for tools to users to achieve TASKS (enrol) that let them complete GOALS (learn a new language',
+        topRightText: 'Usability and simplicity first: 4 clicks away from enroling in any language and class',
+        topLeftText: 'designed factoring in the need for tools to users to achieve TASKS (enrol) that let them complete GOALS (learn a new language',
+        bottomRightText: 'designed factoring in the need for tools to users to achieve TASKS (enrol) that let them complete GOALS (learn a new language',
+        bottomLeftText: 'designed factoring in the need for tools to users to achieve TASKS (enrol) that let them complete GOALS (learn a new language',
+        bottomText: 'designed factoring in the need for tools to users to achieve TASKS (enrol) that let them complete GOALS (learn a new language',
+      },
+      {
+        imageSrc: '/src/assets/images/Hex/png/Hexagons_RT_bighex-67.png',
+        topText: 'landing page with visual clarity & a clear message hierarchy with a different call to action button color',
+        topRightText: 'landing page with visual clarity & a clear message hierarchy with a different call to action button color',
+        topLeftText: 'landing page with visual clarity & a clear message hierarchy with a different call to action button color',
+        bottomRightText: 'landing page with visual clarity & a clear message hierarchy with a different call to action button color',
+        bottomLeftText: 'landing page with visual clarity & a clear message hierarchy with a different call to action button color',
+        bottomText: 'landing page with visual clarity & a clear message hierarchy with a different call to action button color',
+      },
+      {
+        imageSrc: '/src/assets/images/Hex/png/Hexagons_RT_bighex-68.png',
+        topText: 'landing page with visual clarity & a clear message hierarchy with a different call to action button color',
+        topRightText: 'landing page with visual clarity & a clear message hierarchy with a different call to action button color',
+        topLeftText: 'landing page with visual clarity & a clear message hierarchy with a different call to action button color',
+        bottomRightText: 'landing page with visual clarity & a clear message hierarchy with a different call to action button color',
+        bottomLeftText: 'landing page with visual clarity & a clear message hierarchy with a different call to action button color',
+        bottomText: 'landing page with visual clarity & a clear message hierarchy with a different call to action button color',
+      },
     ],
   }),
 }

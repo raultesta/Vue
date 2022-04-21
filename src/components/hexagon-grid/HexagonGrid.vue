@@ -4,8 +4,15 @@
       <div class="d-flex">
         <div class="hexagon-grid-wrapper">
           <hexagon
-            v-for="(hexagonSrc, index) in hexagons" :key="index"
-            :imgSrc="hexagonSrc"
+            v-for="(hexagon, index) in hexagons"
+            :key="index"
+            :imgSrc="hexagon.imageSrc"
+            :topText="hexagon.topText"
+            :topRightText="hexagon.topRightText"
+            :topLeftText="hexagon.topLeftText"
+            :bottomRightText="hexagon.bottomRightText"
+            :bottomLeftText="hexagon.bottomLeftText"
+            :bottomText="hexagon.bottomText"
           />
         </div>
       </div>
@@ -22,7 +29,9 @@ export default {
     Hexagon,
   },
   props: {
-    hexagons: Array,
+    hexagons: {
+      type: Array,
+    },
     size: {
       type: String,
       default: 'regular',
@@ -60,19 +69,21 @@ export default {
         height: 120%;
       }
 
-      .hexagon {
-        clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-        width: $regularSize;
-        margin: $regularMargin;
-        height: calc($regularSize * 1.1547); 
-        margin-bottom: calc($regularMargin - $regularSize * 0.2885); 
+      .hexagon-wrapper {
         display: inline-block;
-        font-size:initial;
+        
+        .hexagon {
+          clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+          width: $regularSize;
+          height: calc($regularSize * 1.1547); 
+          margin-bottom: calc($regularMargin - $regularSize * 0.2885); 
+          font-size:initial;
 
-        .hex-img {
-          object-fit: cover;
-          width: 100%;
-          height: 100%;
+          .hex-img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
         }
       }
     }
