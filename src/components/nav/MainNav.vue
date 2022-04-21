@@ -2,8 +2,8 @@
     <b-navbar class="main-nav" :class="currentPage" type="light">
         <b-navbar-brand href="#">
             <div class="branding">
-                <h1>
-                    <router-link :to="{ name:'home' }">PORTFOLIO</router-link>
+                <h1 class="mb-0">
+                    <router-link :to="{ name:'home' }">Portfolio</router-link>
                 </h1>
                 <span v-for="(cargo, index) in cargos" v-bind:key="index">
                     {{ cargo }}
@@ -27,11 +27,8 @@ export default {
 
     data: () => ({
         cargos: [
-            'Head of Design',
-            'Senior Designer',
-            'UX/UI Designer',
-            'Master of Laws',
-            'Communication Sciences PhD',            
+            'Raul Testa',
+            'UX/UI Designer',           
         ],
         currentPage: null,
     }),
@@ -54,7 +51,9 @@ export default {
 
         .branding {
             width: 700px;
-            
+            h1 {
+                line-height: 50px;
+            }            
             .cargos {
                 span {
                     margin-right: 15px;
@@ -62,8 +61,12 @@ export default {
             }
             
             span {
-                font-size: 11px;
+                font-size: 15px;
                 margin-right: 6px;
+                
+                &:first-child {
+                    margin-left: 4px;
+                }
             }
         }
 
