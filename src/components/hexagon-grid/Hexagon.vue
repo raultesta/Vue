@@ -3,29 +3,19 @@
     <div class="hexagon">
        <img class="hex-img" :src= "imgSrc">
     </div>
-    <div class="postit topText">
-      {{ topText }}
-    </div>
-    <div class="postit topRightText">
-      {{ topRightText }}
-    </div>
-    <div class="postit topLeftText">
-      {{ topLeftText }}
-    </div>
-    <div class="postit bottomRightText">
-      {{ bottomRightText }}
-    </div>
-    <div class="postit bottomLeftText">
-      {{ bottomLeftText }}
-    </div>
-    <div class="postit bottomText">
-      {{ bottomText }}
-    </div>
+    <postit v-if="topText" :content="topText" position="topText"/>
+    <postit v-if="topRightText" :content="topRightText" position="topRightText"/>
+    <postit v-if="topLeftText" :content="topLeftText" position="topLeftText"/>
+    <postit v-if="bottomRightText" :content="bottomRightText" position="bottomRightText"/>
+    <postit v-if="bottomLeftText" :content="bottomLeftText" position="bottomLeftText"/>
+    <postit v-if="bottomText" :content="bottomText" position="bottomText"/>
 </div>
 
 </template>
 
 <script>
+import Postit from '@/components/postit/Postit.vue';
+
 export default {
   name: 'hexagon',
   props: {
@@ -37,56 +27,15 @@ export default {
     bottomLeftText: String,
     bottomText: String,
   },
+  components: {
+    Postit,
+  },
 }
 </script>
 
 <style lang="scss">
-// TODO : Styling for ACTUAL postits
-// https://dev.to/thormeier/fully-responsive-html-css-sticky-note-4okl
 .hexagon-wrapper {
   position: relative;
-  
-  .postit {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    width: 173px;
-    height: 173px;
-    z-index: 99;
-    background-color: #f3c24d;
-    padding: 5px;
-    text-align: center;
-
-    &.topText {
-      top: -80px;
-      right: 165px;
-    }
-    
-    &.topRightText {
-      top: 0;
-      right: 0;
-    }
-    
-    &.topLeftText {
-      top: 0;
-      left: 0;
-    }
-    
-    &.bottomRightText {
-      bottom: -59px;
-      right: 0;
-    }
-    
-    &.bottomLeftText {
-      bottom: -59px;
-      left: 0;
-    }
-    
-    &.bottomText {
-      bottom: -145px;
-      right: 165px;
-    }
-  }
 }
 </style>
 
