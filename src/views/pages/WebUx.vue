@@ -14,7 +14,7 @@
           <p>SPEAK aims at solving the migrant social integration problem. Its webs solution had to be easy to use and to enable class enrollment</p>
         </b-col>
       </b-row>
-      <hexagon-grid :hexagons="hexagonsSPEAKsite" size="large"/>
+      <hexagon-grid :hexagons="hexagonsSpeakSite" size="large"/>
        <b-row>
         <b-col class="d-flex flex-column align-items-center col" style="margin-top: 280px; margin-bottom: 100px;
 ">
@@ -22,7 +22,7 @@
           <p>SPEAK aims at solving the migrant social integration problem. Its webs solution had to be easy to use and to enable class enrollment</p>
         </b-col>
       </b-row>
-      <hexagon-grid :hexagons="hexagonsrandomsites" size="large"/>
+      <hexagon-grid :hexagons="hexagonsRandomSites" size="large"/>
     </page>
 </template>
 
@@ -66,7 +66,7 @@ export default {
         // bottomText: 'landing page with visual clarity & a clear message hierarchy with a different call to action button color',
       },
     ],
-    hexagonsSPEAKsite:[
+    hexagonsSpeakSite:[
       {
         imageSrc: '/src/assets/images/Hex/png/bighex_random-sites1.png',
         topText: 'designed factoring in the need for tools to users to achieve TASKS (enrol) that let them complete GOALS (learn a new language',
@@ -112,8 +112,8 @@ export default {
         bottomLeftText: 'designed factoring in the need for tools to users to achieve TASKS (enrol) that let them complete GOALS (learn a new language',
         // bottomText: 'designed factoring in the need for tools to users to achieve TASKS (enrol) that let them complete GOALS (learn a new language',
       },
-    ]
-    hexagonsrandomsites:[
+    ],
+    hexagonsRandomSites:[
       {
         imageSrc: '/src/assets/images/Hex/png/Hexagons_RT_bighex SPEAK1.png',
         topText: 'designed factoring in the need for tools to users to achieve TASKS (enrol) that let them complete GOALS (learn a new language',
