@@ -73,9 +73,9 @@ export default {
         .hexagon {
           clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
           width: $regularSize;
+          margin: $regularMargin;
           height: calc($regularSize * 1.1547); 
           margin-bottom: calc($regularMargin - $regularSize * 0.2885); 
-          font-size:initial;
 
           .hex-img {
             object-fit: cover;
