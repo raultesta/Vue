@@ -1,23 +1,21 @@
 <template>
-  <b-row class="hexagon-grid" :class="size">
-    <b-col>
-      <div class="d-flex">
-        <div class="hexagon-grid-wrapper">
-          <hexagon
-            v-for="(hexagon, index) in hexagons"
-            :key="index"
-            :imgSrc="hexagon.imageSrc"
-            :topText="hexagon.topText"
-            :topRightText="hexagon.topRightText"
-            :topLeftText="hexagon.topLeftText"
-            :bottomRightText="hexagon.bottomRightText"
-            :bottomLeftText="hexagon.bottomLeftText"
-            :bottomText="hexagon.bottomText"
-          />
-        </div>
+  <div class="hexagon-grid" :class="size">
+    <div class="d-flex">
+      <div class="hexagon-grid-wrapper">
+        <hexagon
+          v-for="(hexagon, index) in hexagons"
+          :key="index"
+          :imgSrc="hexagon.imageSrc"
+          :topText="hexagon.topText"
+          :topRightText="hexagon.topRightText"
+          :topLeftText="hexagon.topLeftText"
+          :bottomRightText="hexagon.bottomRightText"
+          :bottomLeftText="hexagon.bottomLeftText"
+          :bottomText="hexagon.bottomText"
+        />
       </div>
-    </b-col>
-  </b-row>
+    </div>
+  </div>
 </template>
 
 <script>

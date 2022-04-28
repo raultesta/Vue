@@ -64,7 +64,9 @@ export default {
       {
         imageSrc: '/src/assets/images/Hex/svg/Hexagons_RT_logo-14.svg',
       },
-      // '/src/assets/images/Hex/svg/Hexagons_RT_logo-15.svg',
+      {
+        imageSrc: '/src/assets/images/Hex/svg/Hexagons_RT_logo-15.svg',
+      }
       // '/src/assets/images/Hex/svg/Hexagons_RT_logo-16.svg',
       // '/src/assets/images/Hex/svg/Hexagons_RT_logo-17.svg',
       // '/src/assets/images/Hex/svg/Hexagons_RT_logo-18.svg',
@@ -116,8 +118,6 @@ export default {
   }),
 }
 </script>
-
-
 
 <style lang="scss">
 .page-design {
