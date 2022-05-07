@@ -1,5 +1,10 @@
 // Override from: "node_modules/bootstrap/scss/_variables.scss"
 
+// Colours
+
+$primary:       #1D71B8;
+// $secondary:     $gray-600;
+
 // Typography
 //
 
@@ -15,3 +20,27 @@ $h3-font-size:                28px;
 $h4-font-size:                $font-size-base * 1.5;
 $h5-font-size:                $font-size-base * 1.25;
 $h6-font-size:                $font-size-base;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);

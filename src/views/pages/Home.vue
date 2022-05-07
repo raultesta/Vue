@@ -56,7 +56,7 @@ export default {
         flex-direction: column;
         justify-content: center;
         background-color: #fff;
-        max-width: 250px;
+        max-width: 300px;
 
         .nav-buttons {
           width: 100%;

@@ -10,12 +10,12 @@
                 </span>
             </div>
         </b-navbar-brand>
-        <b-navbar-nav class="ml-auto">
-            <b-nav-item href="#">
-                <b-button :to="{ name:'design' }" pill variant="primary">Design</b-button>
+        <b-navbar-nav>
+            <b-nav-item>
+                <b-button :to="{ name:'design' }" variant="primary">Design</b-button>
             </b-nav-item>
-            <b-nav-item href="#">
-                <b-button :to="{ name:'web-ux' }" pill variant="primary">Web & UX/UI Design</b-button>
+            <b-nav-item>
+                <b-button :to="{ name:'web-ux' }" variant="primary">UX/UI & Design</b-button>
             </b-nav-item>
         </b-navbar-nav>
     </b-navbar>
@@ -42,6 +42,10 @@ export default {
 </script>
 
 <style lang="scss">
+    @import "@/assets/scss/base/_variables.scss";
+    @import "@/../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+
+
     .main-nav {
         background-color: #F1F1F1;
 
@@ -50,7 +54,6 @@ export default {
         }
 
         .branding {
-            width: 700px;
             h1 {
                 line-height: 50px;
             }            
@@ -71,10 +74,14 @@ export default {
         }
 
         .navbar-nav {
-            width: 250px;
-            margin-right: 135px;
+            margin-left: auto;
+            margin-right: 150px;
             display: flex;
             justify-content: space-around;
+
+            @include media-breakpoint-down(sm) {
+                background: red;                
+            }
         }
     }
 </style>

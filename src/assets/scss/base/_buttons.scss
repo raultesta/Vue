@@ -1,0 +1,10 @@
+.btn {
+  width: max-content;
+  
+  &.router-link-exact-active {
+    &.router-link-active {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
