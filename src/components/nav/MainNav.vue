@@ -73,14 +73,22 @@ export default {
             }
         }
 
+        @include media-breakpoint-down(md) {
+            &.navbar-expand {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
         .navbar-nav {
             margin-left: auto;
             margin-right: 150px;
             display: flex;
             justify-content: space-around;
 
-            @include media-breakpoint-down(sm) {
-                background: red;                
+            @include media-breakpoint-down(md) {
+                margin: 0;
             }
         }
     }

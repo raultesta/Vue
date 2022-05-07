@@ -19,6 +19,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/scss/base/_variables.scss";
+@import "@/../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+
 #app {
   position: relative;
 

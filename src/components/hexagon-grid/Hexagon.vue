@@ -36,6 +36,20 @@ export default {
 <style lang="scss">
 .hexagon-wrapper {
   position: relative;
+
+  .hexagon {
+    color: purple;
+    outline: 2px solid purple;
+    border: 2px solid purple;
+    outline-offset: -2px;
+    transition: outline-offset 250ms ease;
+
+    &:focus,
+    &:hover {
+      outline-width: 8px;
+      outline-offset: 8px;
+    }
+  }
 }
 </style>
 
