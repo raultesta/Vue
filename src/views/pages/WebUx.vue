@@ -1,7 +1,7 @@
 <template>
     <page wrapperClass="page-design">
       <b-row class="hexagon-row-spacing">
-        <b-col cols="12" class="d-flex flex-column align-items-center col">
+        <b-col cols="12" class="d-flex flex-column align-items-center col hexagon-container-copy">
           <h2>Web Design, UX/UI & Web Development</h2>
           <p>Nowadays my work has its focus on web and UX/UI design and also on web development </p>
         </b-col>
@@ -10,17 +10,16 @@
         </b-col>
       </b-row>
       <b-row class="hexagon-row-spacing">
-        <b-col cols="12" class="d-flex flex-column align-items-center col">
+        <b-col cols="12" class="d-flex flex-column align-items-center col hexagon-container-copy">
           <h3>WEBdesign - CITIZEN Dashboard</h3>
-          <p>Hidden from the public eye, CITIZEN’s dashboard is designed to be used by a Mayor or other local political figure
-who needs to frequently consult the big data of its citizens to make sure his political decisions are what the people need.</p>
+          <p>Hidden from the public eye, CITIZEN’s dashboard is designed to be used by a Mayor or other local political figure who needs to frequently consult the big data of its citizens to make sure his political decisions are what the people need.</p>
         </b-col>
         <b-col>
           <hexagon-grid :hexagons="hexagonsCitizenSite" size="large"/>
         </b-col>
       </b-row>
       <b-row class="hexagon-row-spacing">
-        <b-col cols="12" class="d-flex flex-column align-items-center col">
+        <b-col cols="12" class="d-flex flex-column align-items-center col hexagon-container-copy">
           <h3>WEBdesign - SPEAK website</h3>
           <p>SPEAK aims at solving the migrant social integration problem. Its web solution had to be easy to use and to easily enable class enrollment</p>
         </b-col>
@@ -29,7 +28,7 @@ who needs to frequently consult the big data of its citizens to make sure his po
         </b-col>
       </b-row>
        <b-row class="hexagon-row-spacing">
-        <b-col cols="12" class="d-flex flex-column align-items-center col">
+        <b-col cols="12" class="d-flex flex-column align-items-center col hexagon-container-copy">
           <h3>APPdesign - SPEAK App</h3>
           <p>As SPEAK has a huge broad of personas, its app had to be pretty simple but versatile at the same time</p>
         </b-col>
@@ -38,7 +37,7 @@ who needs to frequently consult the big data of its citizens to make sure his po
         </b-col>
       </b-row>
        <b-row class="hexagon-row-spacing">
-        <b-col cols="12" class="d-flex flex-column align-items-center col">
+        <b-col cols="12" class="d-flex flex-column align-items-center col hexagon-container-copy">
           <h3>APPdesign - CITIZEN App</h3>
           <p>As SPEAK has a huge broad of personas, its app had to be pretty simple but versatile at the same time</p>
         </b-col>
@@ -47,7 +46,7 @@ who needs to frequently consult the big data of its citizens to make sure his po
         </b-col>
       </b-row>
        <b-row class="hexagon-row-spacing">
-        <b-col cols="12" class="d-flex flex-column align-items-center col">
+        <b-col cols="12" class="d-flex flex-column align-items-center col hexagon-container-copy">
           <h3>APPdesign - All apps</h3>
           <p>All apps built</p>
         </b-col>
@@ -56,7 +55,7 @@ who needs to frequently consult the big data of its citizens to make sure his po
         </b-col>
       </b-row>
        <b-row class="hexagon-row-spacing">
-        <b-col cols="12" class="d-flex flex-column align-items-center col">
+        <b-col cols="12" class="d-flex flex-column align-items-center col hexagon-container-copy">
           <h3>WEBdev - Porfolio Website</h3>
           <p>Website developed in HTML, CSS and using Vue.js framework</p>
         </b-col>
@@ -186,7 +185,7 @@ export default {
         imageSrc: '/src/assets/images/Hex/png/Hexagons_citizenApp5.png',
         bottomRightText: 'Aesthetically pleasing design and a game feel created specifically to retain users',
       },
-     ],
+    ],
       hexagonsPortfolioSite:[
       {
         imageSrc: '/src/assets/images/Hex/png/Hexagons_PortfolioSite1.png',
@@ -237,6 +236,13 @@ export default {
 
   &:first-child {
     margin-top: 0;
+  }
+
+  .hexagon-container-copy {
+    p,
+    h3 {
+      text-align: center;
+    }
   }
 }
 

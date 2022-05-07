@@ -1,5 +1,5 @@
 <template>
-    <div class="page-main" :class="wrapperClass">
+    <div class="page-main container" :class="wrapperClass">
        <slot></slot>
     </div>
 </template>
