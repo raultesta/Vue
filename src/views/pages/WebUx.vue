@@ -167,7 +167,7 @@ export default {
      hexagonsCitizenApp:[
       {
         imageSrc: '/src/assets/images/Hex/png/Hexagons_citizenApp1.png',
-        topLeftText: 'Content organized into smaller chunks to help users process, understand and memorize easily, thus respecting Miller’s Law',
+        topLeftText: 'Content organized into smaller chunks to help users process, understand and easily memorize, thus respecting Miller’s Law',
       },
       {
         imageSrc: '/src/assets/images/Hex/png/Hexagons_citizenApp2.png',
@@ -190,7 +190,7 @@ export default {
       hexagonsPortfolioSite:[
       {
         imageSrc: '/src/assets/images/Hex/png/Hexagons_PortfolioSite1.png',
-        topLeftText: 'Homepage with two ways to move forward: buttons. That aims to create an inception in the users mind about the portfolio’s onwer’s skills',
+        topLeftText: 'Homepage with two ways to move forward: buttons. Aims to create an inception in the users mind about the portfolio’s onwer’s skills',
       },
       {
         imageSrc: '/src/assets/images/Hex/png/Hexagons_PortfolioSite2.png',
@@ -202,7 +202,7 @@ export default {
       },
       {
         imageSrc: '/src/assets/images/Hex/png/Hexagons_PortfolioSite4.png',
-        bottomLeftText: 'Developed in HTML, CSS and JavaScript with Vue.js which is a fundamental tool for web developing.',
+        bottomLeftText: 'Developed in HTML, CSS and JavaScript with Vue2 which is a fundamental tool for web developing.',
       },
       {
         imageSrc: '/src/assets/images/Hex/png/Hexagons_PortfolioSite5.png',
