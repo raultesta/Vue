@@ -2,8 +2,8 @@
     <page wrapperClass="page-design">
       <b-row class="hexagon-row-spacing">
         <b-col cols="12" class="d-flex flex-column align-items-center col hexagon-container-copy">
-          <h2>Web Design, UX/UI & Web Development</h2>
-          <p>Nowadays my work has its focus on web and UX/UI design and also on web development </p>
+          <h2>UX/UI & Web Development</h2>
+          <p>Design work focused on web and UX/UI design and also on web development</p>
         </b-col>
         <b-col>
           <hexagon-grid :hexagons="hexagons" size="large"/>

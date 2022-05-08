@@ -28,7 +28,7 @@ export default {
     data: () => ({
         cargos: [
             'Raul Testa',
-            'UX/UI Designer',           
+            'UX Architect / UI Designer',           
         ],
         currentPage: null,
     }),
