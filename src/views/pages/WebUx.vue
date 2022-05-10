@@ -15,7 +15,7 @@
           <p>Hidden from the public eye, CITIZEN’s dashboard is designed to be used by a Mayor or other local political figure who needs to frequently consult the big data of its citizens to make sure his political decisions are what the people need.</p>
         </b-col>
         <b-col>
-          <hexagon-grid :hexagons="hexagonsCitizenSite" size="large"/>
+          <hexagon-grid :hexagons="hexagonsCitizenSite" size="large" backgroundColor="#dc3545"/>
         </b-col>
       </b-row>
       <b-row class="hexagon-row-spacing">
@@ -24,7 +24,7 @@
           <p>SPEAK aims at solving the migrant social integration problem. Its web solution had to be easy to use and to easily enable class enrollment</p>
         </b-col>
         <b-col>
-          <hexagon-grid :hexagons="hexagonsSpeakSite" size="large"/>
+          <hexagon-grid :hexagons="hexagonsSpeakSite" size="large" backgroundColor="yellow"/>
         </b-col>
       </b-row>
        <b-row class="hexagon-row-spacing">

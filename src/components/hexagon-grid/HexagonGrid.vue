@@ -1,5 +1,5 @@
 <template>
-  <div class="hexagon-grid" :class="size">
+  <div class="hexagon-grid" :class="size" :style="style">
     <div class="d-flex">
       <div class="hexagon-grid-wrapper">
         <hexagon
@@ -34,7 +34,16 @@ export default {
       type: String,
       default: 'regular',
     },
+    backgroundColor: {
+      type: String,
+      default: "#fff"
+    },
   },
+  computed: {
+    style (){
+      return `background-color:${this.backgroundColor}`
+    }
+  }
 }
 </script>
 
